@@ -1,0 +1,30 @@
+# Edit this list to manage your Projects page — no HTML needed.
+# Each entry: name, year, blurb, and an optional url.
+#
+# NOTE: these are pulled from your LinkedIn (2011–2014) as a starting
+# point. They're dated — replace or trim with the work you'd rather show.
+
+- name: "Microsoft Office for Android (K2)"
+  year: "2014"
+  url: ""
+  blurb: "Worked on Word, Excel and PowerPoint for Android tablets — owned features including SendASmile feedback, crash reporting, and telemetry."
+
+- name: "AudioNote"
+  year: "2014"
+  url: ""
+  blurb: "A utility Android app that won the People's Choice award and Second Runner-up at a 2-day hackathon."
+
+- name: "Self Heal System"
+  year: "2013"
+  url: ""
+  blurb: "Reliability automation that improved a key system metric from 97% to 99.99%."
+
+- name: "Hospital Process Automation (NFC)"
+  year: "2012"
+  url: ""
+  blurb: "Internship project: an Android app automating hospital workflows using NFC tags (Java, Android SDK, PHP, MySQL)."
+
+- name: "Building a Modern Computer from First Principles (HACK)"
+  year: "2011"
+  url: ""
+  blurb: "Built a working computer from logic gates up, following the Nand2Tetris approach."

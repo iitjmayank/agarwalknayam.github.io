@@ -1,0 +1,22 @@
+---
+layout: page
+title: Projects
+subtitle: "Selected work. Edit the list in _data/projects.yml."
+permalink: /projects/
+---
+
+<ul class="project-grid">
+  {%- for p in site.data.projects -%}
+  <li class="project-item">
+    <p class="project-meta">{{ p.year }}</p>
+    <h3>
+      {%- if p.url and p.url != "" -%}
+        <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a>
+      {%- else -%}
+        {{ p.name }}
+      {%- endif -%}
+    </h3>
+    <p>{{ p.blurb }}</p>
+  </li>
+  {%- endfor -%}
+</ul>

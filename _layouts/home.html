@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="hero wrap">
+  <h1 class="hero-title">{{ page.heading | default: site.title }}</h1>
+  {%- if site.tagline and site.tagline != "" -%}
+    <p class="hero-tagline">{{ site.tagline }}</p>
+  {%- endif -%}
+  <div class="hero-body">
+    {{ content }}
+  </div>
+</section>
+
+{%- assign recent = site.posts | slice: 0, 4 -%}
+{%- if recent.size > 0 -%}
+<section class="wrap home-writing">
+  <div class="section-head">
+    <h2>Recent writing</h2>
+    <a class="more-link" href="{{ '/blog/' | relative_url }}">All posts →</a>
+  </div>
+  <ul class="post-list">
+    {%- for post in recent -%}
+    <li class="post-row">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <a class="post-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}

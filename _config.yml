@@ -1,0 +1,53 @@
+# ─── Site identity ─────────────────────────────────────────────
+# TODO: edit these to taste — they appear in the title bar, footer,
+# and SEO/social metadata.
+title: Mayank Agarwal
+tagline: "Principal architect — distributed systems, ML, and AI agents."   # short phrase shown under the name on the home page
+description: >-
+  Personal website of Mayank Agarwal — writing, projects, and notes.
+author: Mayank Agarwal
+
+# ─── URLs ──────────────────────────────────────────────────────
+# Custom domain (also set in the CNAME file). For a project-page
+# setup instead, set baseurl to "/repo-name".
+url: "https://agarwalknayam.com"
+baseurl: ""
+
+# ─── Build settings ────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+timezone: Asia/Kolkata
+
+# Default layouts so individual files stay clean.
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: page }
+
+# GitHub-Pages-whitelisted plugins only (work natively, no extra setup).
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ─── Navigation (top bar) ──────────────────────────────────────
+nav:
+  - { title: About,    url: /about/ }
+  - { title: Writing,  url: /blog/ }
+  - { title: Projects, url: /projects/ }
+
+# ─── Social links (footer). Leave blank to hide. ───────────────
+social:
+  github:   iitjmayank
+  twitter:  ""                                       # handle without the @
+  linkedin: "https://www.linkedin.com/in/agarwalknayam/"
+  email:    "agarwal.knayam@gmail.com"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .claude
